@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Oxanium|Roboto|Montserrat:300,600&display=swap');
+
+body {
+	font-family: Montserrat, helvetica, sans-serif;
+	background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+	
+	padding: 0;
+	margin: 20px 10px;
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+		"header header"
+		"c5 c6"
+		"c3 c3"
+		"c4 c4"
+		"c2 c2"
+		"c1 c1";
+}
+
+.header {
+	grid-area: header;
+}
+
+.c1 {
+	grid-area: c1;
+}
+
+#chart2 {
+	padding-bottom: 40px;
+	color: lightgray;
+}
+
+.c2 {
+	grid-area: c2;
+	padding-bottom: 20px;
+}
+
+#chart1 {
+	padding:  0 auto;
+}
+
+.c3 {
+	grid-area: c3;
+}
+
+.c4 {
+	grid-area: c4;
+}
+
+.c5 {
+	grid-area: c5;
+	margin-right: 5px;
+	width: auto;
+}
+
+.c6 {
+	grid-area: c6;
+	margin-left: 5px;
+}
+
+.grid-item {
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 3px 5px 5px lightgray;
+	margin: 5px;
+}
+
+h1 {
+	font-family: Oxanium;
+	font-weight: bold;
+	font-size: 2.5em;
+	
+	text-align: center;
+/*	color: #00538A;*/
+	color:#00A8E8;
+	margin: 10px 0;
+	padding: 0;
+}
+
+h2 {
+	font-size: 1.5em;
+	color: #4A4A4A;
+	
+	margin: 10px 0 10px 10px;
+	padding: 5px 0;
+	
+	font-weight: lighter;
+}
+
+h3 {
+	font-size: 1.0em; 
+	text-align: center;	
+	margin: 10px 0 ;
+}
+
+table {
+	margin: 1px auto;
+	color: #4A4A4A;
+	font-size: 0.8em
+}
+
+th, td {
+	padding-right: 4px;
+}
+
+#water {
+	background-color: #00A8E8;
+	width: 15px;
+}
+
+#bread {
+	background-color: #EFF1F3;
+	width: 15px;
+}
+
+#veg {
+	background-color: #6EA4BF;
+	width: 15px;
+}
+
+#fruit {
+	background-color: #007EA7;
+	width: 15px;
+}
+
+.intro {
+	margin-bottom: 20px;
+	width: 50%;
+}
+
+.d {
+	text-align: center;	
+}
+
+.days-text {
+	font-size: 1em; 
+}
+
+.days-n {
+	font-size: 3.0em;
+	margin: 0;
+	padding: 0;
+	color: #007EA7;
+	font-weight: 
+}
+
+.days {
+	font-size: 1.5em;
+	margin: 0 0 15px 0;
+	padding: 0;
+	color: gray;
+}
+
+.d-info {
+	padding: 5% 0;
+}
+
+.weather {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.w-info {
+	max-width: 70%;
+	min-width: 10%;
+	margin: 12% auto;
+}
+
+.w-day {
+	font-weight: bold;
+}
+
+/*keyframe fade-in animation*/
+body {
+	animation: fadein 2s;
+}
+
+@keyframes fadein {
+    	from { opacity: 0; }
+	12% { opacity: 0; }
+    	to   { opacity: 1; }
+}
+
+/*tablet*/
+@media only screen and (min-width: 560px) {
+	body {
+		grid-template-areas: 
+			"header header"
+			"c5 c6"
+			"c3 c3"
+			"c4 c4"
+			"c1 c2";
+	}
+	
+	#chart1 {
+		margin-top: 60px;
+	}
+}
+
+/*desktop*/
+@media only screen and (min-width: 736px) {
+	body {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-areas: 
+			"header header header header"
+			"c5 c5 c4 c4"
+			"c6 c6 c4 c4"
+			"c3 c3 c1 c2"
+			"c3 c3 c1 c2";
+	}
+}
