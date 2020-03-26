@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Abel&display=swap');
+
+html, body {
+	 height: 100%;
+}
+
+ body {
+	 background: lightblue;
+	 background-image: none;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	 color: white;
+	 margin: 0;
+}
+
+.container {
+	width: 100%;
+}
+
+.trans {
+	opacity: 0;
+}
+
+#time {
+	display: block;
+	text-align: center;
+	font-size: 4em;
+	font-family: Abel;
+}
+
+#date {
+	display: block;
+	text-align: center;
+	font-size: 1.2em;
+	font-family: Open Sans;
+}
+
+#house {
+	position: absolute;
+	margin-top: 120px;
+	width: 80px;
+	animation: 1000ms pulsate infinite alternate ease-in-out;
+	left: 1%;
+	transform: scaleX(-1);
+	z-index:-1;
+}
+
+@keyframes pulsate {
+  	0% { 
+  		top: 90px; 
+  	}
+  	100% { 
+  		top: 75px;
+  	}
+}
+
+#stars {
+  	background-repeat: repeat;
+	background-image: url("img/stars.svg");
+	width: 100%;
+	height: 600px;
+	position: absolute;
+  	z-index: -2;
+	left: 0px;
+  	top: 0px;
+	opacity: 20%;
+}
+
+#moonsun {
+      	width: 80px;
+      	height: 80px;
+      	border-radius: 50%;
+      	box-shadow: 15px 15px 0 0 #f9d71c;
+	margin: 0 20% 0 80%;
+	background: #f9d71c;
+    }
+
+#cloud{
+  	background-position: 0px 0px;
+  	background-repeat: repeat-y;
+	animation: animatedBackground 110s linear infinite;
+	background-image: url("img/afternoon.png");
+	height: 310px;
+}
+
+@keyframes animatedBackground {
+  	from {
+    		background-position: 0 0;
+  	}
+  	
+	to {
+    		background-position: 100% 0;
+  	}
+}
+
+/*media queries*/
+/*tablet*/
+@media only screen and (min-width: 560px){
+
+}
+
+/*desktop*/
+@media only screen and (min-width: 736px){
+
+}
+
+/*big desktop*/
+@media only screen and (min-width: 980px){
+}
