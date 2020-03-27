@@ -94,7 +94,7 @@ function content() {
 		document.body.style.backgroundImage = "linear-gradient(to right, #1A0957, #1A3187)"; //gradient background
 		document.getElementById('cloud').style.backgroundImage = "url(img/night.png)"; //night clouds
 		document.getElementById('stars').style.opacity = "100%";
-		document.getElementById('moonsun').style.margin = "0 60% 0 40%"; //moon to center
+		document.getElementById('moonsun').style.margin = "0 auto"; //moon to center
 		document.getElementById('moonsun').style.background = "none"; //gets rid of the sun that shapes the moon
 	}
 
@@ -134,7 +134,7 @@ function content() {
 		document.body.style.backgroundImage = "linear-gradient(to right, #1A3187, #1A0957)"; //gradient background
 		document.getElementById('cloud').style.backgroundImage = "url(img/night.png)";
 		document.getElementById('stars').style.opacity = "100%"; //stars are fully visible
-		document.getElementById('moonsun').style.margin = "0 60% 0 40%"; //moon to center
+		document.getElementById('moonsun').style.margin = "0 auto"; //moon to center
 		document.getElementById('moonsun').style.background = "none"; //remove sun
 	}
 }
