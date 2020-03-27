@@ -96,6 +96,7 @@ function content() {
 		document.getElementById('stars').style.opacity = "100%";
 		document.getElementById('moonsun').style.margin = "0 auto"; //moon to center
 		document.getElementById('moonsun').style.background = "none"; //gets rid of the sun that shapes the moon
+		document.getElementById('date').style.color = "#606BD4"//color date
 	}
 
 //	morning
@@ -106,6 +107,8 @@ function content() {
 		document.getElementById('stars').style.opacity = "0"; //hide stars
 		document.getElementById('moonsun').style.boxShadow = "none"; //remove moon
 		document.getElementById('moonsun').style.margin = "0 20% 0 80%"; //sun to the right
+		document.getElementById('date').style.color = "#FFDCAC"//color date
+
 	}
 	
 //	afternoon
@@ -116,6 +119,7 @@ function content() {
 		document.getElementById('stars').style.opacity = "0"; //hide stars
 		document.getElementById('moonsun').style.boxShadow = "none"; //remove moon
 		document.getElementById('moonsun').style.margin = "0 auto"; //sun in the middle
+		document.getElementById('date').style.color = "#CAE2FF"//color date
 	}
 	
 //	evening
@@ -126,6 +130,8 @@ function content() {
 		document.getElementById('moonsun').style.borderRadius = "15px 15px 0 0 #f9d71c"; //shaping the moon
 		document.getElementById('moonsun').style.margin = "0 30% 0 70%"; //moon to the right
 		document.getElementById('moonsun').style.background = "none"; //remove sun
+		document.getElementById('date').style.color = "#FCC9C9"//color date
+
 	}
 	
 //	night
@@ -136,6 +142,7 @@ function content() {
 		document.getElementById('stars').style.opacity = "100%"; //stars are fully visible
 		document.getElementById('moonsun').style.margin = "0 auto"; //moon to center
 		document.getElementById('moonsun').style.background = "none"; //remove sun
+		document.getElementById('date').style.color = "#606BD4"//color date
 	}
 }
 
